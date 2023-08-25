@@ -6,6 +6,21 @@ const App = () => {
   const [todo, setTodo] = React.useState("");
   const [todoEditing, setTodoEditing] = React.useState(null);
   const [editingText, setEditingText] = React.useState("");
+
+  React.useEffect(() => {
+    const json = localStorage.getItem("todos");
+    const loadedTodos = JSON.parse(json);
+    if (loadedTodos) {
+      setTodos(loadedTodos);
+    }
+  }, []);
+
+  React.useEffect(() => {
+    if (todos.length > 0) {
+      const json = JSON.stringify(todos);
+      localStorage.setItem("todos", json);
+    }
+  }, [todos]);
   
   // Add the handlesubmit code here
   function handleSubmit(e) {
