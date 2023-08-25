@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/uqwxd-react_labs/static/css/main.f7ae3476.css",
+    "main.js": "/uqwxd-react_labs/static/js/main.839b2e41.js",
+    "index.html": "/uqwxd-react_labs/index.html",
+    "main.f7ae3476.css.map": "/uqwxd-react_labs/static/css/main.f7ae3476.css.map",
+    "main.839b2e41.js.map": "/uqwxd-react_labs/static/js/main.839b2e41.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f7ae3476.css",
+    "static/js/main.839b2e41.js"
+  ]
+}
