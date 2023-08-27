@@ -1,11 +1,10 @@
 h1 {
   text-align: center;
   font-family:Georgia, 'Times New Roman', Times, serif;
-  font-style: italic;
 }
 
 body {
-  background: grey
+  background: white
 }
 #todo-list {
   width: 500px;
