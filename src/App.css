@@ -32,7 +32,7 @@ form input {
 
 button {
   font-size: 16px;
-  background-color: rgb(62, 138, 151);
+  background-color: rgb(0, 0, 0);
   color: #fff;
   border-radius: 8px;
   border: none;
@@ -40,14 +40,14 @@ button {
   cursor: pointer;
 }
 button:hover {
-  background-color: rgb(173, 47, 28);
+  transition: 0.1s ease-in-out;
+  transform: scale(1.05);
 }
 button:active {
-  background-color: rgb(130,35,21);
+  transition: 0.1s ease-in-out;
+  transform: scale(0.95);
 }
-button:focus {
-  outline: 0;
-}
+
 input[type='text'] { font-size: 20px; font-family: monospace; }
 .todo input[type="checkbox"] {
   transform: scale(1.8) translateY(1px);

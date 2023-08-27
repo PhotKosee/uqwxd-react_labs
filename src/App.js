@@ -78,27 +78,29 @@ const App = () => {
         />
         <button type="submit">Add Task</button>
       </form>
-      {todos.map((todo) => (
-        <div className="todo" key={todo.id}>
-          <div className="todo-text">
-            <input type="checkbox" id="completed" checked={todo.completed} onChange={() => toggleComplete(todo.id)} />
-            {todo.id === todoEditing ? (
-              <input type="text" onChange={(e) => setEditingText(e.target.value)} />
-            ) : (
-              <div>{todo.text}</div>
-            )}
-          </div>
+      <div className="todo-wrapper">
+        {todos.map((todo) => (
+          <div className="todo" key={todo.id}>
+            <div className="todo-text">
+              <input type="checkbox" id="completed" checked={todo.completed} onChange={() => toggleComplete(todo.id)} />
+              {todo.id === todoEditing ? (
+                <input type="text" onChange={(e) => setEditingText(e.target.value)} />
+              ) : (
+                <div>{todo.text}</div>
+              )}
+            </div>
 
-          <div className="todo-actions">
-            {todo.id === todoEditing ? (
-              <button onClick={() => submitEdits(todo.id)}>Submit Edits</button>
-            ) : (
-              <button onClick={() => setTodoEditing(todo.id)}>Edit</button>
-            )}
-            <button onClick={() => deleteTodo(todo.id)}>Delete</button>  
+            <div className="todo-actions">
+              {todo.id === todoEditing ? (
+                <button onClick={() => submitEdits(todo.id)}>Submit Edits</button>
+              ) : (
+                <button onClick={() => setTodoEditing(todo.id)}>Edit</button>
+              )}
+              <button onClick={() => deleteTodo(todo.id)}>Delete</button>  
+            </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   );
 };
