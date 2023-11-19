@@ -1,5 +1,5 @@
 # Todolist
-An application managing a list of tasks you need to complete or things you want to do, [visit the site here](https://photkosee.github.io/uqwxd-react_labs/)
+An application managing a list of tasks you need to complete or things you want to do.
 
 ## Features
 - Use an event handler for creating to-do tasks.
